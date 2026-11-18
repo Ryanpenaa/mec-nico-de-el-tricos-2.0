@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mecânico de Elétricos 2.0 | Formação Online" },
+      { name: "description", content: "Aprenda os fundamentos da manutenção de bikes, scooters e patinetes elétricos com apostilas técnicas ilustradas e formação online." },
+      { name: "author", content: "Mecânico de Elétricos 2.0" },
+      { property: "og:title", content: "Mecânico de Elétricos 2.0" },
+      { property: "og:description", content: "Formação online em veículos elétricos leves. Apostilas ilustradas, videoaulas planejadas e materiais técnicos." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      
     ],
     links: [
       {
@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
