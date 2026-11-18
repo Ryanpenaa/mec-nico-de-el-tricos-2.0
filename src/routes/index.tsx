@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Activity, ArrowRight, BatteryCharging, Bike, BookOpen, Check, CheckCircle2, ChevronDown, CircleHelp, ClipboardCheck, Gauge, GraduationCap, Laptop, LockKeyhole, Menu, MonitorPlay, PlayCircle, Search, ShieldCheck, Smartphone, Wrench, X, Zap, Settings2, Cable, Cpu, Disc3, FileText, Megaphone, Users, GaugeCircle, Layers3 } from "lucide-react";
 
 export const Route = createFileRoute("/")({ component: SalesPage });
@@ -60,7 +60,7 @@ const faqs=[
 const baseFeatures=["10 apostilas técnicas ilustradas","Conteúdo dos 10 módulos em PDF","Guias de componentes e defeitos comuns","Material digital para consulta"];
 const fullFeatures=["Tudo do Plano Básico","Cerca de 30 videoaulas planejadas","Central Diagnóstico Elétricos 2.0","Manual Visual de 50 Defeitos","Kit Oficina de Elétricos","Primeiros Clientes na Oficina"];
 function SectionHead({eyebrow,title,sub}: {eyebrow?:string;title:string;sub?:string}) {return <div className="section-head">{eyebrow && <p className="eyebrow">{eyebrow}</p>}<h2>{title}</h2>{sub && <p>{sub}</p>}</div>;}
-function YellowButton({children,onClick,className=""}:{children:React.ReactNode;onClick:()=>void;className?:string}) {return <button className={`yellow-btn ${className}`} onClick={onClick}>{children}<ArrowRight size={19} strokeWidth={3}/></button>;}
+function YellowButton({children,onClick,className=""}:{children:ReactNode;onClick:()=>void;className?:string}) {return <button className={`yellow-btn ${className}`} onClick={onClick}>{children}<ArrowRight size={19} strokeWidth={3}/></button>;}
 function HeroMockup(){
 return <div className="hero-mockup" aria-label="Ilustração conceitual de formação em veículos elétricos e materiais digitais" role="img">
  <div className="mockup-halo"/>
